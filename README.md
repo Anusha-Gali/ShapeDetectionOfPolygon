@@ -1,0 +1,5 @@
+# Shape Detection Of Polygons
+
+The project taken is Shape detection of Polygons upto 4 Edges.
+This project is used for detecting the Line, Triangle, Square, Rhombus, Rectangle. Here we use the OpenCV dataset module to load a pre trained object detection network. This will enable us to pass the input images through the network and obtain the output bounding box(x,y) - coordinates of each object in the image.
+Feature Extraction and Learning algorithms are used to recognise the objects. Here an image of the above given polygons is passed to the detector where in it detects the number of pixels until the polygons are detected based on their shapes. Let us consider n to be number of edges detected. Here we use the conditions such as if n=3 that is if the number of edges is three then it is a polygon of shape "Triangle". Similarly if n=0 then it is a "circle" and if n=2 it is a "Line" and if n=4 then it may be a "square" or a "rectangle". Here when n=4 we identify the image to be a square or Rectangle based on the aspect ratio which is the ratio between the length and the width.
